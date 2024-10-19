@@ -3,6 +3,8 @@ Assignment of Cuvette Team :  Job Posting Board with Email Automation [MERN]
 
 This is the frontend of the project.
 
+Frontend deployment link: https://cuvette-job-posting-board.vercel.app/
+
 # Job Posting Board with Email Automation
 
 This is a full-stack application built for companies to register, verify their accounts via email, post jobs, and send automated emails to candidates. The project is developed using the **MERN stack** (MongoDB, Express.js, React.js, Node.js).
