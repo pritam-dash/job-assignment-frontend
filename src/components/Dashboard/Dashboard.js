@@ -5,7 +5,7 @@ import CreatePostForm from '../JobPosting/JobForm';
 import { UserContext } from '../../context/userContext.js';
 
 const Dashboard = () => {
-  const { user } = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
   const [isFormVisible, setIsFormVisible] = useState(false); 
 
   const handleCreatePostClick = () => {
@@ -21,7 +21,7 @@ const Dashboard = () => {
       {user && <Sidebar />}
 
       <div className="flex-1 flex flex-col min-h-screen bg-white">
-        <Header user={user} />
+        <Header user={user} setUser={setUser} />
 
         {!isFormVisible && (
           <div className="flex flex-col w-full lg:w-[15%] ml-4 p-4 mt-20">
